@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<body>
+    <h2>FORMS IN HTML</h2>
+    <!-- action:where to go after hitting submit button -->
+    <form action="tables.html">
+        <label for="firstname">First name</label>
+        <input id="firstname" type="text" minlength="5" maxlength="50" required>
+        <br><br>
+
+        <label for="">Last name</label>
+        <input type="text" value="RK">
+        <br><br>
+
+        <label for="">Last name</label>
+        <input type="text" disabled>
+        <br><br>
+
+        <label for="">Age</label>
+        <input type="number" placeholder="please enter age">
+        <br><br>
+
+        <label for="">Email</label>
+        <input type="email"><br><br>
+
+        <label for="">Date of joining</label>
+        <input type="date">
+        <br><br>
+
+        <label for="">Password</label>
+        <input type="password">
+        <br><br>
+        
+        <!-- this allows to select all checkbox -->
+        <p>enter shirt size</p>
+        <input type="radio"><label for="">small</label>
+        <input type="radio"><label for="">medium</label>
+        <input type="radio"><label for="">large</label>
+        <br><br>
+
+        <p>Select known languages</p>
+        <input type="checkbox" name="lang" id="English">
+        <label for="English">English</label>
+        <input type="checkbox" name="lang" id="Hindi">
+        <label for="Hindi">Hindi</label>
+        <input type="checkbox" name="lang" id="Telugu">
+        <label for="Telugu">Telugu</label>
+
+        <!-- this allows to select only 1 checkbox -->
+         <!-- for="" and id"" is for allowing to tick the box by clicking on text  -->
+        <p>enter shirt size</p>
+        <input type="radio" name="shirtsize" id="small" checked><label for="small">small</label>
+        <input type="radio" name="shirtsize"><label for="">medium</label>
+        <input type="radio" name="shirtsize"><label for="">large</label>
+        <br><br>
+
+        <label for="clr">Select color</label>
+        <input type="color" id="clr">
+        <br><br>
+
+        <label for="paymentoptions">Select payment method</label>
+        <select name="payment" id="paymentoptions">
+            <option value=""></option>
+            <option value="">Gpay</option>
+            <option value="">EMI</option>
+            <option value="">cod</option>
+        </select>
+        <br><br>
+
+        <label for="fdbk">Please give feedback!</label>
+        <!-- <input type="text"> -->
+        <textarea name="cmt" id="fdbk" rows="20" cols="20" placeholder="enter feedback....."></textarea>
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+</body>
+</html>
